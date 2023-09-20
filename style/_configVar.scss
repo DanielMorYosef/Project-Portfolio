@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+@font-face {
+    font-family: 'rouge';
+    src: url(../font/rougue/RougeScript-Regular.ttf);
+}
+@font-face {
+    font-family: 'Heebo';
+    src: url(../font/Heebo/Heebo-VariableFont_wght.ttf);
+}
+$primaryFont:'Heebo';
+$secondaryFont:'rouge';
+$lightBlue:#1AE0EC;
+$phone-width:371px; 
+@mixin dFlexCol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@mixin ancButtonStyle{
+    font-family: $primaryFont;
+    font-weight: bold;
+    display: block;
+    background-color: $lightBlue;
+    padding: 5px 15px 5px 15px;
+    border-radius: 25px;
+    text-decoration: none;
+    text-align: center;
+}

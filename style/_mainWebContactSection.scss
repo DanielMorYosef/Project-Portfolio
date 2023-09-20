@@ -1,0 +1,74 @@
+.contactSectionWrapper{
+    width: 100vw;
+    height: 600px;
+    background-color: #3A3A3A;
+    display: flex;
+    .formWrapper{
+        @include dFlexCol;
+        width: 30vw;
+        margin-left: 80px;
+        form{
+            color: #fff;
+            font-family: $primaryFont;
+            display: flex;
+            flex-direction: column;
+            h3{
+                font-weight: bold;
+            }
+            p{
+                font-size: 13.5px;
+            }
+            label{
+                font-size: 12px;
+                margin-bottom: -3px;
+                margin-top: 5px;
+                font-weight: 500;
+            }
+            input{
+                outline: none;
+                border: none;
+                border-bottom: 2px solid $lightBlue;
+            }
+            textarea{
+                resize: none;
+                height: 150px;
+                border-bottom: 2px solid $lightBlue;
+            }
+            input[type=submit]{
+                margin-top: 20px;
+                @include ancButtonStyle;
+                width: 90px;
+                padding:3px 6px 0px 6px;
+                font-family: $primaryFont;
+                color: #2C2C2C;
+                font-size: 14px;
+            }
+        }
+    }
+    .contactImg img{
+        margin-left: 50px;
+        width: 500px;
+    }
+}
+@media (max-width:$phone-width){
+    .contactSectionWrapper{
+        flex-direction: column;
+        height: 550px;
+        .contactImg img{
+            width: 150px;
+            margin-left:180px;
+            
+        }
+        .formWrapper{
+            margin-top: -15px;
+            width: 100%;
+            margin-left: 0px;
+            form{
+                width: 80vw;
+                textarea{
+                    height: 70px;
+                }
+            }
+        }
+    }
+}

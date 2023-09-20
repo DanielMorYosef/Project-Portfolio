@@ -1,0 +1,48 @@
+.footerWrapper{
+    height: 130px;
+    background-color: $lightBlue;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    img{
+        width: 25px;
+        height: 25px;
+    }
+    p{
+        margin-top: 5px;
+        font-size: 0.7rem;
+        font-family: $primaryFont;
+        font-weight: bold;
+    }
+    div{
+        height: 50px;
+        text-align: center;
+        flex-basis: 150px;
+    }
+    
+}
+.creditWrapper{
+        height: 20px;
+        color: $lightBlue;
+        font-weight: bold;
+        font-size: 0.7rem;
+        background-color: #000;
+        display: flex;
+        justify-content: space-between;
+    }   
+
+@media (max-width:$phone-width){
+    .footerWrapper{
+        height: 350px;
+        padding: 50px 0px 50px 0px;
+        div{
+            flex-basis: 140px;
+        }
+        img{
+            height: 35px;
+            width: 35px;
+        }
+    }
+}

@@ -1,0 +1,42 @@
+    .header-stylerese {
+        width: 100vw;
+        height: 300px;
+        @include dFlexCol;
+        position: relative;
+    }
+
+    #headerImg {
+        height: 300px;
+        width: 100%;
+        position: absolute;
+    }
+
+    .header-stylerese .header-content {
+        text-align: center;
+        z-index: 5;
+    }
+
+    .header-stylerese .header-content h1 {
+        font-family: $primaryFont;
+        font-weight: 700;
+        width: 250px;
+        color: #000;
+        margin: 0 auto !important;
+    }
+
+    .header-stylerese .header-content h6 {
+        font-family:$primaryFont;
+        width: 450px;
+        text-align: center;
+    }
+
+@media (max-width:$phone-width){
+    #headerImg{
+        height: 200px;
+    }
+    .header-stylerese .header-content h6{
+        width: 290px;
+        font-size: 14px;
+        font-weight: 400;
+    }
+}
