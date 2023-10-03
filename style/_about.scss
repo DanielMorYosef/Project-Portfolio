@@ -1,6 +1,7 @@
 .aboutSection {
     width: 100vw;
     height: 460px;
+    position: relative;
     @include dFlexCol;
     img {
         width: 60px;
@@ -30,6 +31,7 @@
 
 @media (max-width:$phone-width){
     .aboutSection{
+        position: relative;
         height: auto;
         img{
             margin-top: 40px;
@@ -38,5 +40,11 @@
             width: 80vw;
             font-size: 14px;
         }
+    }
+}
+@media (max-width:$tablet-width) and (min-width:$phone-width){
+    .aboutSection{
+        position: relative;
+        height: auto;
     }
 }
