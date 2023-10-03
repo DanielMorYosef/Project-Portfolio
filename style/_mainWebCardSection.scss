@@ -76,3 +76,11 @@
         }
     }
 }
+@media (min-width:$phone-width) and (max-width:$tablet-width){
+    .cardSectionWrapp{
+        height: auto;
+        h3{
+            margin-top: 35px;
+        }
+    }
+}
