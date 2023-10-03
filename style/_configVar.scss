@@ -18,6 +18,7 @@ $primaryFont:'Heebo';
 $secondaryFont:'rouge';
 $lightBlue:#1AE0EC;
 $phone-width:371px; 
+$tablet-width:768px;
 @mixin dFlexCol {
     display: flex;
     justify-content: center;
