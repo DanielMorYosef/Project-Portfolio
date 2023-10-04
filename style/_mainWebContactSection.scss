@@ -50,7 +50,7 @@
         width: 500px;
     }
 }
-@media (max-width:$phone-width){
+@media (max-width:$tablet-width){
     .contactSectionWrapper{
         flex-direction: column;
         height: 550px;
@@ -69,6 +69,13 @@
                     height: 70px;
                 }
             }
+        }
+    }
+}
+@media (min-width:$tablet-width) and (max-width:950px){
+    .contactSectionWrapper{
+        .contactImg img{
+            width: 400px;
         }
     }
 }

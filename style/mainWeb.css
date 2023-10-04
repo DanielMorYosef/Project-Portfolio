@@ -97,7 +97,7 @@ body {
   margin-left: 3px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .icon-container {
     flex-wrap: wrap;
   }
@@ -159,6 +159,9 @@ body {
   .aboutSection {
     position: relative;
     height: auto;
+  }
+  .aboutSection p {
+    width: 400px;
   }
 }
 .cardSectionWrapp {
@@ -275,6 +278,7 @@ body {
   flex-direction: column;
   width: 30vw;
   margin-left: 80px;
+  border: 1px solid #fff;
 }
 .contactSectionWrapper .formWrapper form {
   color: #fff;
@@ -323,9 +327,10 @@ body {
 .contactSectionWrapper .contactImg img {
   margin-left: 50px;
   width: 500px;
+  border: 1px solid #fff;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .contactSectionWrapper {
     flex-direction: column;
     height: 550px;
@@ -344,6 +349,11 @@ body {
   }
   .contactSectionWrapper .formWrapper form textarea {
     height: 70px;
+  }
+}
+@media (min-width: 768px) and (max-width: 950px) {
+  .contactSectionWrapper .contactImg img {
+    width: 400px;
   }
 }
 .footerWrapper {
