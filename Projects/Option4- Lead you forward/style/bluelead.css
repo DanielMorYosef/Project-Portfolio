@@ -10,7 +10,7 @@ body {
 
 @font-face {
   font-family: Assistant;
-  src: url(../../font/Assistant/Assistant-VariableFont_wght.ttf);
+  src: url(../../../font/Assistant/Assistant-VariableFont_wght.ttf);
 }
 .formContainer {
   height: 60vh;

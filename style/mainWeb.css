@@ -278,7 +278,6 @@ body {
   flex-direction: column;
   width: 30vw;
   margin-left: 80px;
-  border: 1px solid #fff;
 }
 .contactSectionWrapper .formWrapper form {
   color: #fff;
@@ -327,7 +326,6 @@ body {
 .contactSectionWrapper .contactImg img {
   margin-left: 50px;
   width: 500px;
-  border: 1px solid #fff;
 }
 
 @media (max-width: 768px) {
