@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="simon.css">
+    <script defer src="simon.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="headerdiv">
+                <h3 id="level">Level 1</h3>
+                <h3 id="score">Best : 0</h3>
+            </div>
+        </header>
+        <div class="mainwrap">
+            <section class="boxes">
+                <div id="circles"></div>
+                <button id="box_green" class="box"></button>
+                <button id="box_yellow" class="box"></button>
+                <button id="box_red" class="box"></button>
+                <button id="box_blue" class="box"></button>
+            </section>
+            <button id="start" class="start disable">Start</button>
+        </div>
+
+
+        <section id="modal_overlay" class="hide">
+            <div class="modal_content">
+                <h1 id="modal_message">You Lose</h1>
+                <button id="modal_button">try again</button>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

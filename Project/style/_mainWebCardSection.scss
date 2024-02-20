@@ -1,0 +1,99 @@
+.cardSectionWrapp{
+    width: 100vw;
+    height: 900px;
+    background-color: #F6F6F6;
+    padding-top: 30px;
+    margin: 0 auto;
+    @include dFlexCol;
+    h3{
+        margin-top: -35px;
+        font-family: $primaryFont;
+        font-weight: 800;
+    }
+    p{
+        text-align: center;
+        font-family: $primaryFont;
+    }
+}
+.row{
+    width: 60vw;
+    margin: 0 auto;
+    display: flex;
+    .cardImg{
+        width: 13rem;
+}
+}
+.cardIcons{
+    display: flex;
+    justify-content: space-around;
+    width: 100px;
+    margin-bottom: 10px;
+    img{
+        width: 20px;
+        height: 20px;
+    }
+}
+.card{
+    box-shadow: 3px 3px 15px #00000029;
+    margin-bottom: 30px;
+    width: 216px;
+    .cardImg{
+        width: 216px;
+        height: 118px;
+    }
+}
+
+.card-body{
+    @include dFlexCol;
+    h6{
+        font-family: $primaryFont;
+    }
+    a{
+        @include ancButtonStyle;
+        width: 7rem;
+        margin: 0 auto;
+        padding:2px 5px 2px 5px;
+        color: #2C2C2C;
+        font-family: $primaryFont;
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    p{
+        font-size: 10px;
+        font-family: $primaryFont;
+    }
+}
+.cardContainer{
+    margin-top: 20px;
+}
+
+
+@media (max-width:$phone-width){
+
+    .cardSectionWrapp{
+        height: auto;
+        margin: 0 auto;
+        h3{
+            margin-top: 35px;
+        }
+        .card{
+            margin-left: -10px;
+        }
+    }
+}
+@media (min-width:$phone-width) and (max-width:$tablet-width){
+    .cardSectionWrapp{
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        h3{
+            margin-top: 35px;
+        }
+    }
+}
+@media (max-width:1000px){
+    .cardSectionWrapp{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

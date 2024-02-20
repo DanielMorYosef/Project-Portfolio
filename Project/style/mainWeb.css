@@ -1,0 +1,534 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: "rouge";
+  src: url(../font/rougue/RougeScript-Regular.ttf);
+}
+@font-face {
+  font-family: "Heebo";
+  src: url(../font/Heebo/Heebo-VariableFont_wght.ttf);
+}
+.font-rouge {
+  font-family: "rouge";
+}
+
+nav {
+  width: 100vw;
+}
+
+.togglerColor {
+  background-color: #1AE0EC;
+}
+
+.navTopBorder {
+  border-top: 2px solid #1AE0EC;
+}
+
+.navBottomBorder {
+  box-shadow: 0px -1px 3px 0px rgba(42, 39, 39, 0.75) inset;
+}
+
+.container img {
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+}
+
+.nav-link:hover {
+  color: #1AE0EC !important;
+}
+
+/* media query make cursive brandname displaynone need only picture */
+.header-stylerese {
+  width: 100vw;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+#headerImg {
+  height: 300px;
+  width: 100%;
+  position: absolute;
+}
+
+.header-stylerese .header-content {
+  text-align: center;
+  z-index: 5;
+}
+
+.header-stylerese .header-content h1 {
+  font-family: "Heebo";
+  font-weight: 700;
+  width: 250px;
+  color: #000;
+  margin: 0 auto !important;
+}
+
+.header-stylerese .header-content h6 {
+  font-family: "Heebo";
+  width: 450px;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  #headerImg {
+    height: 200px;
+  }
+  .header-stylerese .header-content h6 {
+    width: 290px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+.icon-container {
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+}
+
+.icon-container .icon-styling {
+  width: 50px;
+  height: 50px;
+  margin-right: 3px;
+  margin-left: 3px;
+}
+
+@media (max-width: 768px) {
+  .icon-container {
+    flex-wrap: wrap;
+  }
+}
+.aboutSection {
+  width: 100vw;
+  height: 460px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.aboutSection img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.aboutSection h1 {
+  font-family: "Heebo";
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.aboutSection p {
+  width: 600px;
+  text-align: center;
+  font-family: "Heebo";
+  margin-bottom: 25px;
+}
+.aboutSection a {
+  font-family: "Heebo";
+  font-weight: bold;
+  display: block;
+  background-color: #1AE0EC;
+  padding: 5px 15px 5px 15px;
+  border-radius: 25px;
+  text-decoration: none;
+  text-align: center;
+  color: #3A3A3A;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 480px) {
+  .aboutSection {
+    position: relative;
+    height: auto;
+  }
+  .aboutSection img {
+    margin-top: 40px;
+  }
+  .aboutSection p {
+    width: 80vw;
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) and (min-width: 480px) {
+  .aboutSection {
+    position: relative;
+    height: auto;
+  }
+  .aboutSection p {
+    width: 400px;
+  }
+}
+.cardSectionWrapp {
+  width: 100vw;
+  height: 900px;
+  background-color: #F6F6F6;
+  padding-top: 30px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.cardSectionWrapp h3 {
+  margin-top: -35px;
+  font-family: "Heebo";
+  font-weight: 800;
+}
+.cardSectionWrapp p {
+  text-align: center;
+  font-family: "Heebo";
+}
+
+.row {
+  width: 60vw;
+  margin: 0 auto;
+  display: flex;
+}
+.row .cardImg {
+  width: 13rem;
+}
+
+.cardIcons {
+  display: flex;
+  justify-content: space-around;
+  width: 100px;
+  margin-bottom: 10px;
+}
+.cardIcons img {
+  width: 20px;
+  height: 20px;
+}
+
+.card {
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1607843137);
+  margin-bottom: 30px;
+  width: 216px;
+}
+.card .cardImg {
+  width: 216px;
+  height: 118px;
+}
+
+.card-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.card-body h6 {
+  font-family: "Heebo";
+}
+.card-body a {
+  font-family: "Heebo";
+  font-weight: bold;
+  display: block;
+  background-color: #1AE0EC;
+  padding: 5px 15px 5px 15px;
+  border-radius: 25px;
+  text-decoration: none;
+  text-align: center;
+  width: 7rem;
+  margin: 0 auto;
+  padding: 2px 5px 2px 5px;
+  color: #2C2C2C;
+  font-family: "Heebo";
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.card-body p {
+  font-size: 10px;
+  font-family: "Heebo";
+}
+
+.cardContainer {
+  margin-top: 20px;
+}
+
+@media (max-width: 480px) {
+  .cardSectionWrapp {
+    height: auto;
+    margin: 0 auto;
+  }
+  .cardSectionWrapp h3 {
+    margin-top: 35px;
+  }
+  .cardSectionWrapp .card {
+    margin-left: -10px;
+  }
+}
+@media (min-width: 480px) and (max-width: 768px) {
+  .cardSectionWrapp {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .cardSectionWrapp h3 {
+    margin-top: 35px;
+  }
+}
+@media (max-width: 1000px) {
+  .cardSectionWrapp {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.contactSectionWrapper {
+  width: 100vw;
+  height: 600px;
+  background-color: #3A3A3A;
+  display: flex;
+}
+.contactSectionWrapper .formWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 30vw;
+  margin-left: 80px;
+}
+.contactSectionWrapper .formWrapper form {
+  color: #fff;
+  font-family: "Heebo";
+  display: flex;
+  flex-direction: column;
+}
+.contactSectionWrapper .formWrapper form h3 {
+  font-weight: bold;
+}
+.contactSectionWrapper .formWrapper form p {
+  font-size: 13.5px;
+}
+.contactSectionWrapper .formWrapper form label {
+  font-size: 12px;
+  margin-bottom: -3px;
+  margin-top: 5px;
+  font-weight: 500;
+}
+.contactSectionWrapper .formWrapper form input {
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #1AE0EC;
+}
+.contactSectionWrapper .formWrapper form textarea {
+  resize: none;
+  height: 150px;
+  border-bottom: 2px solid #1AE0EC;
+}
+.contactSectionWrapper .formWrapper form input[type=submit] {
+  margin-top: 20px;
+  font-family: "Heebo";
+  font-weight: bold;
+  display: block;
+  background-color: #1AE0EC;
+  padding: 5px 15px 5px 15px;
+  border-radius: 25px;
+  text-decoration: none;
+  text-align: center;
+  width: 90px;
+  padding: 3px 6px 0px 6px;
+  font-family: "Heebo";
+  color: #2C2C2C;
+  font-size: 14px;
+}
+.contactSectionWrapper .contactImg img {
+  margin-left: 50px;
+  width: 500px;
+}
+
+@media (max-width: 768px) {
+  .contactSectionWrapper {
+    flex-direction: column;
+    height: 550px;
+  }
+  .contactSectionWrapper .contactImg img {
+    width: 150px;
+    margin-left: 180px;
+  }
+  .contactSectionWrapper .formWrapper {
+    margin-top: -15px;
+    width: 100%;
+    margin-left: 0px;
+  }
+  .contactSectionWrapper .formWrapper form {
+    width: 80vw;
+  }
+  .contactSectionWrapper .formWrapper form textarea {
+    height: 70px;
+  }
+}
+@media (min-width: 768px) and (max-width: 950px) {
+  .contactSectionWrapper .contactImg img {
+    width: 400px;
+  }
+}
+.footerWrapper {
+  height: 130px;
+  background-color: #1AE0EC;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.footerWrapper img {
+  width: 25px;
+  height: 25px;
+}
+.footerWrapper p {
+  margin-top: 5px;
+  font-size: 0.7rem;
+  font-family: "Heebo";
+  font-weight: bold;
+}
+.footerWrapper div {
+  height: 50px;
+  text-align: center;
+  flex-basis: 150px;
+}
+
+.creditWrapper {
+  height: 20px;
+  color: #1AE0EC;
+  font-weight: bold;
+  font-size: 0.7rem;
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 480px) {
+  .footerWrapper {
+    height: 350px;
+    padding: 50px 0px 50px 0px;
+  }
+  .footerWrapper div {
+    flex-basis: 140px;
+  }
+  .footerWrapper img {
+    height: 35px;
+    width: 35px;
+  }
+}
+.jsCardWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+}
+.jsCardWrap h3 {
+  font-family: "Heebo";
+  font-weight: 800;
+  margin: 50px;
+}
+.jsCardWrap .jsCardTitleP {
+  text-align: center;
+}
+
+.jsCard {
+  height: 333px;
+  width: 214px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 8px solid rgba(31, 61, 71, 0.2196078431);
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.jsCardImg {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px;
+}
+
+.jsCardBody {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: -100%;
+  position: absolute;
+  background: rgba(31, 61, 71, 0.2196078431);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  border-radius: 10px;
+  color: #000;
+  line-height: 1.2;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 1s all ease-in-out;
+}
+
+.jsCard:hover .jsCardBody {
+  right: 0;
+}
+
+.jsCardTitle {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 500;
+  font-family: "Heebo";
+}
+
+.jsCardSubTitle {
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.jsCardInfo {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.jsCardBtn {
+  color: #000;
+  text-decoration: none;
+  background: #9cbbcb;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  cursor: pointer;
+  width: 100px;
+}
+
+.jsCardBtn a {
+  text-decoration: none;
+  color: #000;
+}
+
+.jsCardBtn:hover {
+  background: #a4c6d7;
+}
+
+.jsCardRow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 70vw;
+}
+
+.whiter {
+  color: #fff;
+}/*# sourceMappingURL=mainWeb.css.map */

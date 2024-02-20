@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer type="module" src="./main.js"></script>
+    <link rel="stylesheet" href="watch.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="userSide">
+            <nav>
+                <ul>
+                    <li id="worldClockSection"><img id="worldIcon" src="./images/worldIcon.jpg" alt=""> World Clock</li>
+                    <li id="timerSection"><img id="timerIcon" src="./images/timer.png" alt=""> Timer</li>
+                    <li id="stopwatchSection"><img id="stopwatchIcon" src="./images/stopWatch.png" alt=""> Stop Watch
+                    </li>
+                </ul>
+            </nav>
+            <div id="worldclock" class="worldclock">
+                <h2>
+                    Choose a country to display it's time
+                </h2> <br>
+                <select name="" id="list"></select>
+
+            </div>
+            <div id="timer" class="timer">
+                <h2>Insert time</h2>
+                <div class="timerWrap">
+                    <label for="">Min:</label>
+                    <input type="number" id="inputMin" min="0" max="59" placeholder="00">
+                    <label for="">Sec:</label>
+                    <input type="number" id="inputSec" min="0" max="59" placeholder="00">
+                </div>
+                &nbsp;
+                <div class="timerBtnWrap">
+                    <button id="timerBtn">Start</button>
+                    <button id="timerResetBtn">Reset</button>
+                </div>
+            </div>
+            <div id="stopwatch">
+                <h2>Start the stop watch</h2>
+                <div class="swBtnWrapper">
+                    <button id="swStartBtn">Start</button>
+                    <button id="swLapBtn">Restart</button>
+                </div>
+                &nbsp;
+                <div class="swListWrap">
+                    <ul id="swList"></ul>
+                </div>
+            </div>
+        </div>
+        <div class="watch">
+            <img src="./images/watch3-Recovered.jpg" alt="">
+            <div class="overlay">
+                <h6 id="currentTime"></h6>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+.jsCardWrap{
+    @include dFlexCol; 
+    height:auto;
+    h3{
+        font-family: $primaryFont;
+        font-weight: 800;
+        margin: 50px;
+    }
+    .jsCardTitleP{
+        text-align: center;
+    }
+}
+.jsCard{
+    height: 333px;
+    width: 214px;
+    border-radius: 20px;
+    overflow: hidden;
+    border:8px solid #1f3d4738;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.jsCardImg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.jsCardBody{
+    width: 100%;
+    height: 100%;
+    top:0;
+    right:-100%;
+    position: absolute;
+    background: #1f3d4738;
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    color: #000;
+    line-height: 1.2;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s all ease-in-out;
+}
+.jsCard:hover .jsCardBody{
+    right:0;
+}
+
+.jsCardTitle{
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: $primaryFont;
+}
+
+.jsCardSubTitle{
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 400;
+}
+.jsCardInfo{
+    font-size: 14px;
+    font-weight: 400;
+}
+.jsCardBtn{
+    color:#000;
+    text-decoration: none;
+    background:#9cbbcb;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    cursor: pointer;
+    width: 100px;
+}
+.jsCardBtn a{
+    text-decoration: none;
+    color:#000;
+}
+.jsCardBtn:hover{
+    background:#a4c6d7;
+}
+.jsCardRow{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 70vw;
+}
+.whiter{
+    color: #fff;
+}

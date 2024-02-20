@@ -1,0 +1,136 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.watch{
+    width: 25vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
+.watch img{
+    width: 30vw;
+}
+.watch .overlay{
+    width: 30vw;
+    position: absolute;
+    height: 30vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.userSide{
+    width: 40vw;
+    display: flex;
+    align-items: center;
+}
+.userSide ul{
+    width: 11vw;
+    display: flex;
+    flex-direction: column;
+}
+.userSide ul li{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 150px;
+    justify-content: center;
+}
+.userSide ul li img {   
+    width: 50px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+.userSide .worldclock{
+    height: 150px;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+.userSide .worldclock select{
+    width: 100%;
+    border: none;
+}
+.timer{
+    width: 40vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+    height: 150px;
+}
+.timer h1{
+    margin-bottom: 20px;
+}
+#worldIcon{
+    box-shadow: 5px 5px 15px #000;
+}
+#stopwatch{
+    width: 40vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+    display: none;
+    min-height: 150px;
+}
+#stopwatch h2{
+    margin-bottom: 15px;
+}
+#stopwatch #swStartBtn, #stopwatch #swLapBtn{
+    width: 50px;
+}
+.swBtnWrapper{
+    margin: 0 auto;
+}
+#stopwatch #swList{
+    list-style-type: circle;
+}
+#stopwatch #swList li{
+    height: auto;
+    border: none;
+    list-style-type: circle;
+}
+.swListWrap{
+        margin: 0 auto;
+    }
+
+@media (max-width: 700px){
+    .userSide ul {
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    .userSide ul li{
+        width: 100px;
+    }
+    .userSide{
+        flex-direction: column;
+        position: relative;
+        margin-bottom: 20px;
+        width: 80%;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .watch img{
+        height: auto;
+        width: 230px;
+    }
+    #stopwatch #swList{
+        display: block;
+    }
+    .timerWrap{
+        display: flex;
+        flex-direction: column;
+    }
+}

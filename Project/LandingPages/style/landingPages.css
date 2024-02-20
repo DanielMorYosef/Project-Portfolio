@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+@font-face{
+    src: url('../../font/rougue/RougeScript-Regular.ttf');
+    font-family: 'Rouge';
+}
+@font-face{
+    src: url('../../font/Heebo/Heebo-VariableFont_wght.ttf');
+    font-family: 'Heebo';
+}
+/* navBar */
+.font-rouge {
+    font-family: 'Rouge';
+}
+
+
+
+.navTopBorder {
+    border-top: 2px solid #1AE0EC;
+}
+
+.container img {
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+}
+.nav-link:hover{
+    color: #1AE0EC !important;
+}
+/* Header */
+.header-stylerese {
+    width: 100vw;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.button-container{
+    width: 300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.button-container a{
+    font-family: 'Heebo';
+    font-weight: bold;
+    color: #2C2C2C;
+    background-color:#18d4de ;
+    padding: 5px 15px 5px 15px;
+    border-radius: 25px;
+    text-decoration: none;
+    width: 140px;
+    margin-top:20px;
+    text-align: center;
+}
+
+    #headerImg {
+        height: 300px;
+        width: 100%;
+        position: absolute;
+    }
+
+    .header-stylerese .header-content {
+        text-align: center;
+        z-index: 5;
+    }
+
+    .header-stylerese .header-content h1 {
+        font-family: 'Heebo';
+        font-weight: 700;
+        width: 250px;
+        color: #000;
+        margin: 0 auto !important;
+    }
+
+    .header-stylerese .header-content h6 {
+        font-family:'Heebo';
+        width: 450px;
+        text-align: center;
+    }
+/* Icon Bar */
+.icon-container {
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 3px 6px #00000029;
+    position: relative;
+}
+
+.icon-container .icon-styling {
+    width: 50px;
+    height: 50px;
+    margin-right: 3px;
+    margin-left: 3px;
+    
+}
+/* Switch Photo */
+.switchPhotoContainer{
+    height: 550px;
+    background-color: #EBFEFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.switchPhotoContainer img{
+    width: 600px;
+    height: auto;
+    box-shadow: 0px 0px 40px #00000066;
+}
+
+/* Credit Bar */
+.creditWrapper{
+        height: 20px;
+        color:#1AE0EC;
+        font-weight: bold;
+        font-size: 0.7rem;
+        background-color: #000;
+        display: flex;
+        justify-content: space-between;
+    }   
+
+@media (max-width:375px){
+    nav div .togglerColor {
+        background-color: #1AE0EC;
+    }
+    .header-stylerese .header-content h6{
+        width: 340px;
+    }
+    .switchPhotoContainer img{
+        width: 340px;
+    }
+    .switchPhotoContainer{
+        height: 400px;
+    }
+}

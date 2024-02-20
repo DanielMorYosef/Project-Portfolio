@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bingo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Heebo:wght@400;900&family=Rouge+Script&display=swap"
+        rel="stylesheet">
+    <script defer src="bingo.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="top-section">
+            <img src="./images/bingo.png" alt="">
+            <label for="">Rolled Number</label>
+            <input id="number-current"></input>
+            <label for="">Numbers Rolled</label>
+            <input id="number-chosen"></input>
+            <button id="btn" class="buttonStyle">Roll Number</button>
+        </div>
+        <div class="game-board">
+            <div class="playerSide">
+                <h5>P1</h5>
+                <div id="card"></div>
+            </div>
+
+            <div class="RivalSide">
+                <h5>CPU</h5>
+                <div id="rival"></div>
+            </div>
+        </div>
+        <p id="winsP">Wins:</p>
+        <button id="resetBtn" class="buttonStyle">Reset</button>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Satisfy';
+    src: url(./Satisfy/Satisfy-Regular.ttf);
+}
+.gamestats{
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+}
+h3,h4{
+    font-family: 'Satisfy';
+}
+#gameboard{
+    display: grid;
+    grid-template-columns: repeat(4, 90px);
+    gap:15px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.headerWrap{
+    display: flex;
+    margin-left: -20px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.headerWrap #headerImg{
+    width: 30vw;
+    height: 120px;
+    position: relative;
+}
+.headerWrap #peeking{
+    width: 12vw;
+    height: 120px;
+}
+.headerWrap #leaning{
+    width: 12vw;
+    height: 120px;
+    margin-left: -20px;
+}
+.face, .back{
+    width: 90px;
+    height: 90px;
+}
+.flip{
+    display: none;
+}
+
+@media (max-width:430px){
+    #gameboard{
+        width: 80vw;
+        grid-template-columns: repeat(4,1fr);
+        margin: 0 auto;
+        gap:5px;
+    }
+    .gamestats{
+        width: 70vw;
+    }
+    .face, .back{
+    width: 70px;
+    height: 70px;
+}
+}

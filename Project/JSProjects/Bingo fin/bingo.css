@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    width: 80vw;
+    height: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.top-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.top-section img{
+    height: 130px;
+    margin-top: -10px;
+}
+
+.buttonStyle {
+    background-color: #fbeee0;
+    margin-top: 10px;
+    border: 2px solid #422800;
+    border-radius: 30px;
+    box-shadow: #422800 4px 4px 0 0;
+    color: #422800;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0 11px;
+    line-height: 25px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.buttonStyle:hover {
+    background-color: #fff;   
+}
+
+.buttonStyle:active {
+    box-shadow: #422800 2px 2px 0 0;
+    transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+.buttonStyle {
+    min-width: 120px;
+    padding: 0 25px;
+}
+}
+.top-section label{
+    margin-top: 10px;
+    font-family: 'Dancing Script';
+    font-size: 1.3rem;
+}
+.top-section input{
+    margin-top: 10px;
+    width:800px;
+    text-align: center;
+    outline: none;
+    border: none;
+    font-size: 0.8rem;
+}
+.game-board{
+    width: 600px;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+#card{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    border: 1px solid #000;
+}
+#card div{
+    border: 1px solid #000;
+    padding: 5px;
+    text-align: center;
+}
+.colored{
+    background-color: pink;
+}
+.coloredRival{
+    background-color: lightblue;
+}
+#rival{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    border: 1px solid #000;
+}
+#rival div{
+    border: 1px solid #000;
+    padding: 5px;
+    text-align: center;
+}
+.playerSide h5, .RivalSide h5{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 2px;
+}
+#btn-reset{
+    margin-top: 20px;
+}
+
+@media (max-width: 550px) {
+    .game-board{
+        flex-direction: column;
+        width: 300px;
+        margin-top: 100px;
+    }
+    .RivalSide{
+        margin-top: 20px;
+    }
+    #winsP{
+        margin-top: 90px;
+    }
+    .top-section img{
+        width: 300px;
+    }
+}
