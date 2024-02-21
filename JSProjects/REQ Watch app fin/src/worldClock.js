@@ -6,7 +6,7 @@ let timeZoneElement= document.getElementById('currentTime');
 timeZoneElement.innerText= new Date().toLocaleString('en-us',{ timeStyle:"short"},{dateStyle: 'short'})
 
 document.addEventListener('DOMContentLoaded', ()=>{
-    fetch('../../../JSProjects/REQ Watch app fin/src/worldclock.json')
+    fetch('https://danielmoryosef.github.io/Project-Portfolio/JSProjects/REQ%20Watch%20app%20fin/src/worldclock.json')
         .then(response => response.json())
         .then (data => data.map(country => {
             const option=document.createElement('option');
